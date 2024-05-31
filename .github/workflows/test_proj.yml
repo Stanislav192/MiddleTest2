@@ -28,4 +28,4 @@ jobs:
       env:
         SECRET_KEY: ${{secrets.SECRET_KEY}}
         DJANGO_SETTINGS_MODULE: project_gallery.settings
-      run: python manage.py test 
+      run: python "MiddleTest2/manage.py" test 
