@@ -1,4 +1,4 @@
-name: DjangoCICD
+name: MiddleTest2
 
 on:
   push:
@@ -27,5 +27,5 @@ jobs:
     - name: Run Django tests
       env:
         SECRET_KEY: ${{secrets.SECRET_KEY}}
-        DJANGO_SETTINGS_MODULE: djangoCICD.settings
+        DJANGO_SETTINGS_MODULE: project_gallery.settings
       run: python manage.py test
